@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QLTT</title>
+    <link rel="stylesheet" href="../../css/trangchu.css">
+    <link rel="stylesheet" href="../../css/trangQuanLyGV.css">
+    <link rel="stylesheet" href="../../Fontawesome_v6/css/all.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- header -->
+        <div id="header_component">
+            <script  src="../../javascript/components/Header.js"></script>
+        </div>
+
+        <div class="container_body">
+            <div id="menu_component">
+                <script src="../../javascript/components/Menu.js"></script>
+            </div>
+
+            <div class="content_body">
+
+                <div class="render_body container_table_ql">
+                    <div class="line_title">
+                        <div class="title_hd1">Quản Lý Giảng Viên</div>
+                        <div>
+                            <button>
+                                <i class="fa-solid fa-plus"></i>
+                                Thêm Giảng viên
+                            </button>
+                        </div>
+                    </div>
+                    <div class="line_filter">
+                        <input type="text" placeholder="Tìm theo mã giảng viên" />
+                        <button>
+                            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                    <div class="table_body">
+                        <table border="0">
+                            <tr>
+                                <th>#</th>
+                                <th>MGV</th>
+                                <th>TÊN GV</th>
+                                <th>Địa chỉ</th>
+                                <th>Action</th>
+                            </tr>
+                            <tbody>
+
+                                <script>
+                                    const LIST_USER = [
+                                        {
+                                            id: 999,
+                                            name: "Nguyễn Văn Phong",
+                                            diaChi: "13 Nguyễn Văn Bảo",
+                                        },
+                                        {
+                                            id: 266,
+                                            name: "Nguyễn Văn Linh",
+                                            diaChi: "144 Nguyễn Văn Bảo",
+                                        },
+                                        {
+                                            id: 64532,
+                                            name: "Nguyễn Văn Hoàng",
+                                            diaChi: "143334 Nguyễn Văn Bảo",
+                                        },
+                                    ];
+
+                                    document.addEventListener("DOMContentLoaded", function () {
+                                        const tbody = document.querySelector("table tbody");
+
+                                        // Lặp qua mảng LIST_USER và tạo các hàng mới
+                                        LIST_USER.forEach(function (user, index) {
+                                            const row = document.createElement("tr");
+
+                                            const indexCell = document.createElement("td");
+                                            indexCell.textContent = index + 1;
+                                            row.appendChild(indexCell);
+
+                                            const idCell = document.createElement("td");
+                                            idCell.textContent = user.id;
+                                            row.appendChild(idCell);
+
+                                            const nameCell = document.createElement("td");
+                                            nameCell.textContent = user.name;
+                                            row.appendChild(nameCell);
+
+                                            const addressCell = document.createElement("td");
+                                            addressCell.textContent = user.diaChi;
+                                            row.appendChild(addressCell);
+
+                                            const actionCell = document.createElement("td");
+                                            // const deleteButton = document.createElement("button");
+                                            // deleteButton.innerHTML = '<i class="fa-solid fa-trash"></i>';
+                                            // deleteButton.id = "btn_delete";
+                                            // actionCell.appendChild(deleteButton);
+                                            const editButton = document.createElement("button");
+                                            editButton.innerHTML = '<i class="fa-solid fa-pen"></i>';
+                                            actionCell.appendChild(editButton);
+                                            row.appendChild(actionCell);
+
+                                            tbody.appendChild(row);
+                                        });
+                                    });
+
+                                </script>
+
+                                <!-- map row -->
+                            </tbody>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../javascript/index.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    background-color: #F9EAF9;
+    font-family:
+    -apple-system,
+    Segoe UI,
+    Tahoma,
+    Geneva,
+    Verdana,
+    sans-serif !important;
+}
+
+.container_table_ql > div {
+    margin: 20px 0px;
+}
+.line_title{
+    display: flex;
+    justify-content: space-between;
+}
+.title_hd1{
+    font-size: 25px;
+    font-weight: 700;
+}
+.line_filter input{
+    width: 300px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #a7a6a6;
+    font-size: 14px;
+    background-color: #fff;
+    padding-left: 10px;
+}
+.table_body table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.table_body th{
+    border-bottom:2px solid #7a7a7a ;
+    padding: 15px 0px;
+    font-size: 17px;
+}
+
+.table_body td{
+    text-align: center;
+    padding: 15px 0px;
+    border-bottom:1px solid #c1c1c1 ;
+}
+
+ /* button */
+.container_table_ql  button{
+    padding:10px 13px;
+    background: #23dc6c;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+#btn_delete{
+    background-color: #bc1b1b;
+}
