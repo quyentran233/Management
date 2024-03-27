@@ -14,17 +14,25 @@ body{
 }
 .container_login{
     width: 100%;
-}
-
-.header{
-    padding: 20px 40px;
+    height: 100vh;
+    background-image: url('../image/bgr.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #ffffff69;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
 .body_container{
-    width: 100%;
+    width: 80%;
+    height: 550px;
     display: flex;
-
+    background-color: #fff;
+    border-radius: 15px;
+    margin: 50px 0px;
 }
 
 
@@ -36,28 +44,25 @@ body{
 }
 
 .box_img > img{
-    height:350px;
+    height:300px;
     display: block;
 }
 .body_container > div{
     width: 100%;
 }
 
-.form_container{
-
-}
-
 .form_box{
-    width: 400px;
+    width: 420px;
     margin: 100px auto;
-    padding: 40px;
     box-shadow: 1px 3px 7px #b9b9b9;
     background: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
 }
 .form_box > div {
     margin: 20px 0px;
 }
-.form_box > div > input{
+.form_box  input{
     width: 100%;
     height: 50px;
     border: 1px solid #dedede;
@@ -66,6 +71,7 @@ body{
     border-bottom:2px solid  #8c8c8c;
     outline: none;
     font-size: 15px;
+    margin-bottom: 20px;
 }
 
 .btn_login{
@@ -73,7 +79,7 @@ body{
     padding: 10px;
     font-size: 20px;
     font-weight: 600;
-    background-color: #4dbc79;
+    background-color: #0073FF;
     color: #ffffff;
     text-align: center;
     border: none;
