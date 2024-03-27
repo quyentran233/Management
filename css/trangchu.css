@@ -14,7 +14,7 @@ body {
         sans-serif !important;
 }
 
-.container {
+.container_wrap {
     width: 100%;
     padding-top: 65px;
 }
@@ -40,7 +40,7 @@ body {
     padding: 5px;
     font-size: 27px;
     margin-left: 15px;
-    color: #23dc6c;
+    color: #2180F8;
     cursor: pointer;
 }
 
@@ -84,7 +84,7 @@ body {
 .menu_body>a>i {
     font-size: 23px;
     margin-right: 10px;
-    color: #23dc6c;
+    color: #2180F8;
 }
 
 
@@ -100,6 +100,7 @@ body {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 15px;
+    margin-top: 65px;
 }
 
 .render_box_total>div {
@@ -115,7 +116,7 @@ body {
 .render_box_total .item_box i {
     font-size: 55px;
     margin-right: 25px;
-    color: #23dc6c;
+    color: #2180F8;
 }
 
 .nb_render .number_total {

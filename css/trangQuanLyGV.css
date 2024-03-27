@@ -3,7 +3,7 @@
 }
 body{
     margin: 0px;
-    background-color: #F9EAF9;
+    background-color: #F9EAF9 !important;
     font-family:
     -apple-system,
     Segoe UI,
@@ -12,13 +12,15 @@ body{
     Verdana,
     sans-serif !important;
 }
-
+.container_table_ql{
+}
 .container_table_ql > div {
     margin: 20px 0px;
 }
 .line_title{
     display: flex;
     justify-content: space-between;
+    margin-top: 0px !important;
 }
 .title_hd1{
     font-size: 25px;
@@ -41,6 +43,7 @@ body{
     border-bottom:2px solid #7a7a7a ;
     padding: 15px 0px;
     font-size: 17px;
+    text-align: center;
 }
 
 .table_body td{
@@ -52,14 +55,17 @@ body{
  /* button */
 .container_table_ql  button{
     padding:10px 13px;
-    background: #23dc6c;
+    background: #2180F8;
     border: none;
     color: #fff;
     border-radius: 5px;
     margin: 0px 10px;
     cursor: pointer;
 }
-
+.btn-close{
+    background: none !important;
+    color: #000000 !important;
+}
 #btn_delete{
     background-color: #bc1b1b;
 }
